@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="main.css" type="text/css">
+</head>
+<body>
+<script>
+function wybor()
+{
+var odpowiedz1 =
+document.getElementById("odpowiedz1").checked;
+var odpowiedz2 =
+document.getElementById("odpowiedz2").checked;
+ var odpowiedz3 =
+document.getElementById("odpowiedz3").checked;
+var odpowiedz4 =
+document.getElementById("odpowiedz4").checked;
+console.log(odpowiedz1,odpowiedz2,odpowiedz3,odpowiedz4);
+if(odpowiedz1==true) odp = "Brawo, dobra odpowiedź";
+else odp="Niestety źle";
+document.getElementById("wynik").innerHTML = "<br>"+odp;
+}
+</script>
+<h1> Test wiedzy </h1>
+<h7> Sprawdź swoją wiedzę!</h7>
+<br>
+<a href = http:\\wp.pl> Link</a>
+<br>
+Kto jest autorem Harrego Pottera?
+<br>
+<input type="radio" name="wybierz" id="odpowiedz1">
+J.K. Rowling<br>
+<input type="radio" name="wybierz" id="odpowiedz2">
+Henryk Sieniewicz<br>
+<input type="radio" name="wybierz" id="odpowiedz3">
+Adam Mickiewicz<br>
+<input type="radio" name="wybierz" id="odpowiedz4">
+Peter Ackroyd<br>
+<br>
+<button onclick="wybor()">Odpowiedź</button>
+<div id="wynik"></div>
+</body>
+</html>

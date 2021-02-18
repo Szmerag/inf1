@@ -1,0 +1,37 @@
+body
+{
+background-color: black;
+font-family: Verdana;
+text-shadow: 1px 1px 5px black;
+font-size: 26px;
+color: white;
+}
+h1
+{
+font-size: 48px;
+color: blue ;
+}
+h7
+{
+font-size:30px;
+color: pink;
+}
+/*Nieodwiedzony link */
+a:link
+{
+color: yellow;
+}
+/*Odwiedzony link */
+a:visited
+{
+color: pink;
+}
+a:focus
+{
+color: blue;
+}
+/*Link po najechaniu kursorem */
+a:hover
+{
+color: red;
+}
